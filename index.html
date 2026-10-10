@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#260d17">
+<title>Salvi & Fígaro — para siempre</title>
+<style>
+:root{--wine:#5b172c;--wine2:#2a0d19;--cream:#f8f0e8;--gold:#d6b477;--muted:#cdbdc0;--glass:rgba(255,246,240,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--wine2);color:var(--cream);font-family:Georgia,'Times New Roman',serif;line-height:1.65}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background:radial-gradient(ellipse at 15% 10%,#8c344b 0,transparent 35%),radial-gradient(ellipse at 85% 70%,#6e243a 0,transparent 38%);z-index:-1}
+button,input,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(920px,92vw);margin:auto}.eyebrow{letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font:11px Arial,sans-serif}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:48px 0}.hero-inner{max-width:680px}.ornament{color:var(--gold);font-size:22px;letter-spacing:.6em}.hero h1{font-size:clamp(44px,10vw,90px);line-height:1.02;font-weight:400;margin:20px 0 12px}.hero h1 span{color:var(--gold);font-style:italic}.subtitle{color:var(--muted);font-style:italic;font-size:18px}.rule{height:1px;width:100px;background:var(--gold);margin:25px auto}.btn{border:1px solid var(--gold);background:transparent;color:var(--cream);padding:12px 21px;letter-spacing:.08em;font:11px Arial,sans-serif;text-transform:uppercase;transition:.2s}.btn:hover{background:var(--gold);color:#29101a}.btn.gold{background:var(--gold);color:#2a0d19}.section{padding:76px 0;border-top:1px solid rgba(214,180,119,.23)}.section h2{font-weight:400;font-size:clamp(30px,6vw,48px);line-height:1.15;margin:8px 0 18px}.lead{color:var(--muted);max-width:620px}.center{text-align:center}.letter{max-width:690px;margin:26px auto 0;padding:clamp(24px,6vw,52px);background:linear-gradient(135deg,rgba(255,246,240,.09),rgba(255,246,240,.025));border:1px solid rgba(214,180,119,.45);box-shadow:0 18px 70px #10050a55}.letter p{font-size:18px}.signature{font-size:27px;font-style:italic;color:var(--gold);margin-top:28px}.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.photo{aspect-ratio:3/4;border:1px solid rgba(214,180,119,.45);background:linear-gradient(145deg,#47202d,#201019);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:14px;overflow:hidden;position:relative}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo .placeholder{color:var(--muted);font-size:13px}.photo input{position:absolute;bottom:9px;left:8px;width:calc(100% - 16px);font:10px Arial,sans-serif;color:#fff;z-index:2;opacity:.9}.photo:has(img[src]) .placeholder{display:none}.counter{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:26px 0}.timebox{min-width:92px;padding:18px 12px;border:1px solid rgba(214,180,119,.4);background:var(--glass)}.timebox strong{display:block;color:var(--gold);font-size:28px;font-weight:400}.timebox span{font:10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.date-control{font:12px Arial,sans-serif;color:var(--muted);margin-top:14px}.date-control input{background:#321421;color:var(--cream);border:1px solid #875265;padding:8px;margin-left:6px}.story{max-width:650px;margin:30px auto 0;text-align:left;border-left:1px solid var(--gold);padding-left:25px}.story-item{margin:0 0 26px;position:relative}.story-item:before{content:"";position:absolute;left:-31px;top:9px;width:11px;height:11px;border-radius:50%;background:var(--gold)}.story-item h3{font-size:21px;font-weight:400;color:var(--gold);margin:0}.story-item p{margin:5px 0;color:var(--muted)}.song-card{max-width:620px;margin:25px auto 0;padding:30px;border:1px solid rgba(214,180,119,.4);background:var(--glass)}.vinyl{width:92px;height:92px;border-radius:50%;margin:0 auto 20px;background:repeating-radial-gradient(circle,#16080e 0 4px,#3b1826 5px 7px);display:grid;place-items:center;animation:spin 8s linear infinite}.vinyl:after{content:"";width:22px;height:22px;border-radius:50%;background:var(--gold)}@keyframes spin{to{transform:rotate(360deg)}}.surprise{max-width:620px;margin:25px auto}.surprise-card{padding:26px;border:1px solid rgba(214,180,119,.4);margin:12px 0;background:var(--glass);display:none}.surprise-card.show{display:block;animation:fade .4s ease}.surprise-card p{font-size:20px;font-style:italic}.footer{padding:50px 0 65px;text-align:center;color:var(--muted);font-size:13px}.tiny{font:10px Arial,sans-serif;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}.hidden{display:none!important}.envelope-screen{position:fixed;inset:0;background:#1a0811;z-index:10;display:grid;place-items:center;padding:24px;transition:opacity .5s}.envelope-screen.gone{opacity:0;pointer-events:none}.envelope{width:min(330px,82vw);height:220px;background:#70243b;position:relative;display:grid;place-items:center;border:1px solid var(--gold);box-shadow:0 20px 80px #0008}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49.5%,#9b4a60 50%,transparent 50.7%),linear-gradient(35deg,transparent 49.5%,#8c3c53 50%,transparent 50.7%)}.seal{z-index:1;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#3a1020;font-size:25px;box-shadow:0 3px 15px #1b0811}.envelope-screen .open-copy{margin-top:25px;text-align:center}.toast{font:12px Arial,sans-serif;color:var(--gold);min-height:20px}
+@media(max-width:620px){.photo-grid{grid-template-columns:1fr 1fr}.photo:last-child{grid-column:1/-1;aspect-ratio:4/3}.section{padding:58px 0}.hero{min-height:92svh}.date-control input{display:block;margin:8px auto}.letter p{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="envelope-screen" id="intro">
+  <div>
+    <div class="envelope"><div class="seal">S ♥ F</div></div>
+    <div class="open-copy">
+      <div class="eyebrow">Una pequeña sorpresa</div>
+      <p style="font-size:22px;margin:8px 0 18px">He guardado algo para ti.</p>
+      <button class="btn gold" id="openBtn" onclick="document.getElementById('intro').style.display='none';document.body.style.overflow='auto';">Abrir nuestro regalo</button>
+    </div>
+  </div>
+</div>
+<header class="hero">
+ <div class="wrap hero-inner">
+  <div class="ornament">✦ &nbsp; ♡ &nbsp; ✦</div>
+  <div class="eyebrow">Una historia que sigue escribiéndose</div>
+  <h1>Salvi <span>&</span><br>Fígaro</h1>
+  <p class="subtitle">Mi lugar favorito siempre tendrá algo de ti.</p>
+  <div class="rule"></div>
+  <a class="btn" href="#carta" style="text-decoration:none;display:inline-block">Descubrir nuestra historia</a>
+ </div>
+</header>
+<main>
+<section class="section" id="carta"><div class="wrap center">
+ <div class="eyebrow">Para ti, con todo mi amor</div><h2>Una carta para nosotros</h2>
+ <p class="lead" style="margin:0 auto">Hay cosas que a veces no caben en una conversación, así que quise guardarlas aquí, solo para ti.</p>
+ <article class="letter">
+  <p>Mi amor,</p>
+  <p>No sé si existe una forma perfecta de explicar lo que significas para mí. Solo sé que, entre tantos días comunes, tú has conseguido convertir momentos pequeños en recuerdos que quiero conservar.</p>
+  <p>Me gusta pensar en todo lo que hemos vivido, en lo que nos ha hecho reír, en lo que hemos aprendido y en todas esas cosas que todavía nos faltan por descubrir. No quiero que lo nuestro sea solamente una colección de fechas bonitas: quiero que siga siendo una historia que elegimos cuidar, incluso en los días difíciles.</p>
+  <p>Si alguna vez dudas de lo especial que eres para mí, vuelve a esta página. Aquí queda un pedacito de mi corazón, para recordarte que eres parte de mi historia y que todavía quiero escribir muchas páginas contigo.</p>
+  <p>Gracias por ser tú, por los recuerdos que ya tenemos y por los que aún nos esperan.</p>
+  <p class="signature">Con amor, siempre. ♡</p>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:0">— Salvi & Fígaro</p>
+ </article>
+ <p class="tiny" style="margin-top:22px">Puedes editar esta carta directamente en el archivo index.html</p>
+</div></section>
+<section class="section" id="fotos"><div class="wrap center">
+ <div class="eyebrow">Pequeños instantes, grandes recuerdos</div><h2>Nuestros recuerdos</h2><p class="lead" style="margin:0 auto">Tres espacios para las fotos que cuentan nuestra historia. Para personalizarlos, selecciona una imagen en cada marco.</p>
+ <div class="photo-grid">
+  <label class="photo"><span class="placeholder">♡<br>El comienzo</span><img alt="Foto de nuestro comienzo" class="preview hidden"><input type="file" accept="image/*" aria-label="Elegir foto del comienzo"></label>
+  <label class="photo"><span class="placeholder">♡<br>Un día feliz</span><img alt="Foto de un día feliz" class="preview hidden"><input type="file" accept="image/*" aria-label="Elegir foto de un día feliz"></label>
+  <label class="photo"><span class="placeholder">♡<br>Mi persona favorita</span><img alt="Foto de mi persona favorita" class="preview hidden"><input type="file" accept="image/*" aria-label="Elegir foto favorita"></label>
+ </div>
+ <p class="tiny" style="margin-top:18px">Nota: las fotos elegidas aquí son una vista previa en tu dispositivo; para que las vea otra persona, agrega las imágenes al sitio antes de publicarlo.</p>
+</div></section>
+<section class="section" id="contador"><div class="wrap center">
+ <div class="eyebrow">Desde aquel día</div><h2>El tiempo conociéndonos</h2><p class="lead" style="margin:0 auto">Cada día suma algo a nuestra historia.</p>
+ <div class="counter" aria-live="polite"><div class="timebox"><strong id="days">—</strong><span>Días</span></div><div class="timebox"><strong id="hours">—</strong><span>Horas</span></div><div class="timebox"><strong id="minutes">—</strong><span>Minutos</span></div><div class="timebox"><strong id="seconds">—</strong><span>Segundos</span></div></div>
+ <label class="date-control">Fecha en que se conocieron <input type="date" id="startDate" value="2025-04-29"></label>
+ <p class="tiny">La fecha inicial está puesta como ejemplo: cámbiala si hace falta.</p>
+</div></section>
+<section class="section" id="historia"><div class="wrap center">
+ <div class="eyebrow">Capítulos de nosotros</div><h2>Nuestra historia</h2><p class="lead" style="margin:0 auto">Una historia hecha de momentos que merecen quedarse.</p>
+ <div class="story">
+  <div class="story-item"><h3>El día que empezó todo</h3><p>Ese primer capítulo que, sin saberlo, abrió espacio para tantos recuerdos.</p></div>
+  <div class="story-item"><h3>Los momentos que son solo nuestros</h3><p>Las bromas, las miradas, las canciones y esos detalles que quizá nadie más entiende.</p></div>
+  <div class="story-item"><h3>Lo que todavía nos espera</h3><p>Más lugares, más abrazos, más aprendizajes y nuevas páginas para escribir juntos.</p></div>
+ </div>
+ <p class="tiny">Puedes cambiar estos textos por fechas y recuerdos reales.</p>
+</div></section>
+<section class="section" id="cancion"><div class="wrap center">
+ <div class="eyebrow">Dale play a un recuerdo</div><h2>Nuestra canción</h2>
+ <div class="song-card"><div class="vinyl"></div><div class="eyebrow">Para escuchar pensando en nosotros</div><h3 style="font-size:27px;font-weight:400;margin:8px 0 2px">“Say Yes to Heaven”</h3><p class="lead" style="margin:0 auto 20px">Lana Del Rey</p><a class="btn gold" href="https://open.spotify.com/search/Say%20Yes%20To%20Heaven%20Lana%20Del%20Rey" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">Escuchar canción ♫</a><p class="tiny" style="margin-top:17px">Se abre Spotify; no se reproduce automáticamente.</p></div>
+</div></section>
+<section class="section" id="sorpresas"><div class="wrap center">
+ <div class="eyebrow">Abre cuando quieras sonreír</div><h2>Mensajes sorpresa</h2><p class="lead" style="margin:0 auto">Toca cada sobre para descubrir un mensajito.</p>
+ <div class="surprise">
+  <button class="btn" data-surprise="s1">♡ Cuando me extrañes</button>
+  <div class="surprise-card" id="s1"><p>Ojalá pudiera aparecer a tu lado ahora mismo, abrazarte fuerte y recordarte que tienes un lugar muy especial en mi corazón.</p></div>
+  <button class="btn" data-surprise="s2">✦ Cuando tengas un día difícil</button>
+  <div class="surprise-card" id="s2"><p>No tienes que poder con todo todo el tiempo. Respira, date un momento y recuerda que mereces ternura, calma y cosas bonitas.</p></div>
+  <button class="btn" data-surprise="s3">♥ Cuando quieras recordar cuánto te quiero</button>
+  <div class="surprise-card" id="s3"><p>Te quiero en los días extraordinarios y también en los más normales. En los planes grandes y en esos ratitos sencillos que terminan siendo mis favoritos.</p></div>
+ </div>
+</div></section>
+</main>
+<footer class="footer"><div class="ornament">♡</div><p>Hecho con amor para Salvi & Fígaro.</p><p class="tiny">Un pequeño rincón de nuestra historia</p></footer>
+<script>
+const intro=document.getElementById('intro');
+document.body.style.overflow='hidden';
+document.getElementById('openBtn').addEventListener('click',()=>{intro.style.display='none';document.body.style.overflow='auto';});
+document.querySelectorAll('[data-surprise]').forEach(btn=>btn.addEventListener('click',()=>{const card=document.getElementById(btn.dataset.surprise);card.classList.toggle('show');btn.setAttribute('aria-expanded',card.classList.contains('show')?'true':'false')}));
+document.querySelectorAll('.photo input').forEach(input=>input.addEventListener('change',e=>{const file=e.target.files&&e.target.files[0];if(!file)return;const img=e.target.parentElement.querySelector('img');img.src=URL.createObjectURL(file);img.classList.remove('hidden');}));
+const dateInput=document.getElementById('startDate');
+function updateCounter(){const start=new Date(dateInput.value+'T00:00:00');const now=new Date();if(!dateInput.value||Number.isNaN(start.getTime())||start>now){['days','hours','minutes','seconds'].forEach(id=>document.getElementById(id).textContent='—');return;}let ms=now-start;const d=Math.floor(ms/86400000);ms-=d*86400000;const h=Math.floor(ms/3600000);ms-=h*3600000;const m=Math.floor(ms/60000);ms-=m*60000;const s=Math.floor(ms/1000);document.getElementById('days').textContent=d.toLocaleString('es-MX');document.getElementById('hours').textContent=h;document.getElementById('minutes').textContent=m;document.getElementById('seconds').textContent=s;}
+dateInput.addEventListener('change',updateCounter);updateCounter();setInterval(updateCounter,1000);
+</script>
+</body></html>
